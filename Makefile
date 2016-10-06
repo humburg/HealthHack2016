@@ -11,7 +11,7 @@ DOCKER_IMAGE ?= humburg/HealthHack2016
 GIT_COMMIT = $(strip $(shell git rev-parse --short HEAD))
 
 # Get the version number from the code
-CODE_VERSION = $(strip $(shell dit describe --all --always))
+CODE_VERSION = $(strip $(shell git describe --all --always))
 
 # Find out if the working directory is clean
 GIT_NOT_CLEAN_CHECK = $(shell git status --porcelain)
