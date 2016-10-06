@@ -65,4 +65,4 @@ RUN pip3 install \
     pysam \
     coverage
 
-VOLUME ["/data/gmap", "/data/fastq"]
+VOLUME ["/data/reference", "/data/gmap", "/data/fastq"]
