@@ -52,7 +52,7 @@ ENV PICARD /tools/picard/picard.jar
 ## Install GMAP
 RUN mkdir -p /tmp/download && cd /tmp/download && \
     wget http://research-pub.gene.com/gmap/src/gmap-gsnap-2016-09-23.tar.gz && \
-    tar -xf gmap-gsnap-2016-09-23.tar.gz && cd gmap-gsnap-2016-09-23 && \
+    tar -xf gmap-gsnap-2016-09-23.tar.gz && cd gmap-2016-09-23 && \
     ./configure --with-gmapdb=/data/gmap MAX_READLENGTH=500 && \
     make && make install && \
     cd / && rm -rf /tmp/download
