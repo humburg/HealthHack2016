@@ -30,7 +30,7 @@ $(error echo You are trying to release a build based on a dirty repo)
 endif
 endif
 
-docker_build: $(BINARY)
+docker_build:
 	# Build Docker image
 	docker build \
   --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
