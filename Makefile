@@ -5,7 +5,7 @@ build: docker_build output
 release: docker_build docker_push output
 
 # Image name can be overidden with env vars.
-DOCKER_IMAGE ?= humburg/HealthHack2016
+DOCKER_IMAGE ?= humburg/healthhack-2016
 
 # Get the latest commit.
 GIT_COMMIT = $(strip $(shell git rev-parse --short HEAD))
