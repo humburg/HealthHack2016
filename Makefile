@@ -19,18 +19,15 @@ ifneq (x$(GIT_NOT_CLEAN_CHECK), x)
 DOCKER_TAG_SUFFIX = "-dirty"
 endif
 
-# If we're releasing to Docker Hub we're going to mark it with the latest tag
-ifeq ($(MAKECMDGOALS),release)
 # Use the version number as the release tag.
 DOCKER_TAG = $(CODE_VERSION)
 
-ifndef CODE_VERSION
-$(error You need to create a VERSION file to build a release)
-endif
-
+# Additional checks before pushing to Docker Hub
+ifeq ($(MAKECMDGOALS),release)
 # Don't push to Docker Hub if this isn't a clean repo
 ifneq (x$(GIT_NOT_CLEAN_CHECK), x)
 $(error echo You are trying to release a build based on a dirty repo)
+endif
 endif
 
 docker_build: $(BINARY)
