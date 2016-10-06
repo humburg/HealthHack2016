@@ -64,3 +64,5 @@ RUN pip3 install \
     argparse \
     pysam \
     coverage
+
+VOLUME ["/data/gmap", "/data/fastq"]
