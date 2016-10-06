@@ -3,11 +3,13 @@ MAINTAINER Peter Humburg <p.humburg@garvan.org.au>
 
 ARG VCS_REF
 ARG BUILD_DATE
+ARG VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="HealthHack2016" \
       org.label-schema.description="Development environment for deep sequencing project at HealthHack2016" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/humburg/HealthHack2016" \
+      org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
 ## Install dependencies through distribution packages
