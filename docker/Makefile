@@ -20,7 +20,7 @@ DOCKER_TAG_SUFFIX = "-dirty"
 endif
 
 # Use the version number as the release tag.
-DOCKER_TAG = $(CODE_VERSION)
+DOCKER_TAG = $(CODE_VERSION)$(DOCKER_TAG_SUFFIX)
 
 # Additional checks before pushing to Docker Hub
 ifeq ($(MAKECMDGOALS),release)
