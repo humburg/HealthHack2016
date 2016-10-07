@@ -33,10 +33,10 @@ endif
 docker_build:
 	# Build Docker image
 	docker build \
-  --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
-  --build-arg VERSION=$(CODE_VERSION) \
-  --build-arg VCS_URL=`git config --get remote.origin.url` \
-  --build-arg VCS_REF=$(GIT_COMMIT) \
+  --label org.label-schema.build-date=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
+  --label org.label-schema.version=$(CODE_VERSION) \
+  --label org.label-schema.vcs-url=`git config --get remote.origin.url` \
+  --label org.label-schema.vcs-ref=$(GIT_COMMIT) \
 	-t $(DOCKER_IMAGE):$(DOCKER_TAG) .
 
 docker_push:
