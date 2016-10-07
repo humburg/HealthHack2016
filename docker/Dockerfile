@@ -55,9 +55,9 @@ RUN mkdir -p /tmp/download && cd /tmp/download && \
 RUN mkdir -p /tmp/download && cd /tmp/download && \
     wget http://sco.h-its.org/exelixis/web/software/pear/files/pear-0.9.10-bin-64.tar.gz && \
     tar -xf pear-0.9.10-bin-64.tar.gz && \
-    cp pear-0.9.10-bin-64/pear-0.9.10-bin-64 /usr/local/bin/ && \
+    cp pear-0.9.10-bin-64/pear-0.9.10-bin-64 /usr/local/bin/pear && \
     cd / && rm -rf /tmp/download
-    
+
 ## Install latest version of python packages
 RUN pip3 install cython
 RUN pip3 install \
