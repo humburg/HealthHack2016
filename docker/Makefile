@@ -16,7 +16,7 @@ CODE_VERSION = $(strip $(shell git describe --exact-match 2> /dev/null || echo "
 # Find out if the working directory is clean
 GIT_NOT_CLEAN_CHECK = $(shell git status --porcelain)
 ifneq (x$(GIT_NOT_CLEAN_CHECK), x)
-DOCKER_TAG_SUFFIX = "-dirty"
+DOCKER_TAG_SUFFIX = -dirty
 endif
 
 # Use the version number as the release tag.
