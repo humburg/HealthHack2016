@@ -1,1 +1,1 @@
-# HealthHack2016
+# Docker image for HealthHack 2016
