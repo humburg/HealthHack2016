@@ -2,3 +2,4 @@
 *.fq
 *.fastq.gz
 *.fq.gz
+*.tar.gz
