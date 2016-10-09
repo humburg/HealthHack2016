@@ -57,6 +57,14 @@ RUN mkdir -p /tmp/download && cd /tmp/download && \
     cp pear-0.9.10-bin-64/pear-0.9.10-bin-64 /usr/local/bin/pear && \
     cd / && rm -rf /tmp/download
 
+## install fastQC
+RUN mkdir -p /tmp/download && cd /tmp/download && \
+    wget http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.5.zip && \
+    unzip fastqc_v0.11.5.zip && chmod +x FastQC/fastqc && \
+    mv FastQC /usr/local/FastQC && \
+    cp -s /usr/local/FastQC/fastqc /usr/local/bin/ && \
+    cd / && rm -rf /tmp/download
+
 ## Install latest version of python packages
 RUN pip3 install cython
 RUN pip3 install \
