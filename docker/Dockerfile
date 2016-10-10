@@ -72,4 +72,9 @@ RUN pip3 install \
     pysam \
     coverage
 
+## Add utility scripts
+COPY bin/*  /tmp/utils/
+RUN chmod +x /tmp/utils/*  && mv /tmp/utils/* /usr/local/bin/ && \
+    rm -r /tmp/utils
+
 VOLUME ["/data/reference", "/data/gmap", "/data/fastq"]
