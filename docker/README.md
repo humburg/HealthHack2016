@@ -129,5 +129,6 @@ On Windows the path should look something like `D:/path/to/source/code` (if the 
 
 <a name="fn1">1</a>: Requires OS X Yosemite 10.10.3 or above.
 For previous versions get [Docker Toolbox](https://www.docker.com/products/docker-toolbox). [↩](#a1)
+
 <a name="fn2">2</a>: Requires Microsoft Windows 10 Professional or Enterprise 64-bit. 
 For previous versions get [Docker Toolbox](https://www.docker.com/products/docker-toolbox). [↩](#a2)
