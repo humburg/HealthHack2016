@@ -104,10 +104,12 @@ On Windows the path should look something like `D:/path/to/source/code` (if the 
 
 ## Included software
 * [Python (3.5.2)](https://docs.python.org/3/whatsnew/3.5.html)
-  including support for [Cython](http://cython.org/) and
+  including support for [Cython](http://cython.org/) and [numpy](http://www.numpy.org/).
+  The [biopython](http://biopython.org/wiki/Documentation), 
   [pysam](http://pysam.readthedocs.io/en/latest/)
-  as well as support for unit testing with [nose](http://nose.readthedocs.io/en/latest/)
-  and [coverage](https://coverage.readthedocs.io/en/coverage-4.2/)
+  and [editdistance](https://github.com/aflc/editdistance) modules may be of use.
+  Support for unit testing is provided by the [nose](http://nose.readthedocs.io/en/latest/)
+  and [coverage](https://coverage.readthedocs.io/en/coverage-4.2/) modules.
 * [Java (openjdk 1.8.0_91)](http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
 * [FastQC (0.11.5)](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
   A quality control tool for high throughput sequence data.
