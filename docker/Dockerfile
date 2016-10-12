@@ -7,14 +7,18 @@ LABEL org.label-schema.name="HealthHack2016" \
 
 ## Install dependencies through distribution packages
 RUN apt-get update && apt-get install -y \
+    less \
+    libncurses5-dev \
+    man \
+    nano \
+    openjdk-8-jdk \
     python3 \
     python3-nose \
     python3-pip \
+    vim \
+    wget \
     zlib1g-dev \
     zip \
-    libncurses5-dev \
-    wget \
-    openjdk-8-jdk \
     && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
