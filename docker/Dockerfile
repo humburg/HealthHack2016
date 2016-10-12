@@ -70,13 +70,14 @@ RUN mkdir -p /tmp/download && cd /tmp/download && \
     cd / && rm -rf /tmp/download
 
 ## Install latest version of python packages
-RUN pip3 install cython numpy
-RUN pip3 install \
-    argparse \
-    biopython \
-    coverage \
-    editdistance \
-    pysam
+RUN pip3 install cython numpy && \
+    pip3 install \
+        argparse \
+        biopython \
+        coverage \
+        editdistance \
+        pysam && \
+    rm -r /root/.cache
     
 ## Add utility scripts
 COPY bin/*  /tmp/utils/
