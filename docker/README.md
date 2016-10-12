@@ -80,7 +80,12 @@ docker run --rm -ti --volumes-from jurkat_assembled humburg/healthhack-2016
 This adds a (gzipped) FASTQ file with the sequences of 16,485,876 read pairs
 that have been merged into a single sequence for each pair with 
 [PEAR](http://sco.h-its.org/exelixis/web/software/pear/doc.html).
-See [here](data/assembled/README.md) for further details.
+See [here](data/assembled/README.md) for further details. The raw read
+data are available as two FASTQ files (for the first and second reads of 
+the pairs respectively) through the `humburg/jurkat-only-rna` image. 
+
+A data volume containing the human reference genome (GRCh38) is available
+as `humburg/grch38`.
 
 ### Adding source code
 For development purposes it is convenient to mount a directory from the
