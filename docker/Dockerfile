@@ -66,12 +66,14 @@ RUN mkdir -p /tmp/download && cd /tmp/download && \
     cd / && rm -rf /tmp/download
 
 ## Install latest version of python packages
-RUN pip3 install cython
+RUN pip3 install cython numpy
 RUN pip3 install \
     argparse \
-    pysam \
-    coverage
-
+    biopython \
+    coverage \
+    editdistance \
+    pysam
+    
 ## Add utility scripts
 COPY bin/*  /tmp/utils/
 RUN chmod +x /tmp/utils/*  && mv /tmp/utils/* /usr/local/bin/ && \
