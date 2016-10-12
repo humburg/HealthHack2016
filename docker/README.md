@@ -112,8 +112,9 @@ On Windows the path should look something like `D:/path/to/source/code` (if the 
   including support for [Cython](http://cython.org/) and [numpy](http://www.numpy.org/).
   The [biopython](http://biopython.org/wiki/Documentation), 
   [pysam](http://pysam.readthedocs.io/en/latest/)
-  and [editdistance](https://github.com/aflc/editdistance) modules may be of use.
-  Support for unit testing is provided by the [nose](http://nose.readthedocs.io/en/latest/)
+  and [Levenshtein](https://rawgit.com/ztane/python-Levenshtein/master/docs/Levenshtein.html)
+  modules may be of use. Support for unit testing is provided by the
+  [nose](http://nose.readthedocs.io/en/latest/)
   and [coverage](https://coverage.readthedocs.io/en/coverage-4.2/) modules.
 * [Java (openjdk 1.8.0_91)](http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
 * [FastQC (0.11.5)](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)

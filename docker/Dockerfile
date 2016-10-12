@@ -75,8 +75,8 @@ RUN pip3 install cython numpy && \
         argparse \
         biopython \
         coverage \
-        editdistance \
-        pysam && \
+        pysam \
+        python-Levenshtein && \
     rm -r /root/.cache
     
 ## Add utility scripts
