@@ -20,9 +20,9 @@ then
 fi
 args="$args --output-file=/mapped/$prefix.sam"
 
-if [[ ! -e "/mapped" ]]
+if [[ ! -e "/data/mapped" ]]
 then
-    mkdir /mapped
+    mkdir /data/mapped
 fi
 
 gsnap $args $*
